@@ -1,0 +1,241 @@
+body {
+  position: relative;
+  width: 100%;
+  word-wrap: break-word;
+  font-family: Open Sans;
+  background-color: rgb(211, 211, 211);
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+#title {
+  margin-top: 0;
+}
+
+h1, h2 {
+  font-weight: 500;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#solid {   
+  background-color: #2f3136;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 2.5px;
+}
+
+#html {
+  margin-top: 0;
+  position: static; 
+  background-color: #f06529;
+  color: white;
+  padding: 0px 5px;
+  font-size: 10.8px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.box {
+  margin-top: 5px;
+  padding: 0;
+  height: 13px;
+  border: 0.1px solid #2f3136;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.line {
+  border-radius: 0px 10px 10px 0px;
+  width: 100px;
+  height: 13px;
+  background-color: #2f3136;
+}
+
+#css {
+  margin-top: 5px;
+  position: static; 
+  background-color: #2965f1;
+  color: white;
+  padding: 0px 10px;
+  font-size: 10.8px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.box1 {
+  margin-top: 5px;
+  padding: 0;
+  height: 13px;
+  border: 1px solid #2f3136;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.line1 {
+  border-radius: 0px 10px 10px 0px;
+  width: 200px;
+  height: 13px;
+  background-color: #2f3136;
+}
+
+#js {
+  margin-top: 5px;
+  position: static; 
+  background-color: #f0db4f;
+  color: white;
+  padding: 0px 15px;
+  font-size: 10.8px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.box2 {
+  margin-top: 5px;
+  padding: 0;
+  height: 13px;
+  border: 1px solid #2f3136;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.line2 {
+  border-radius: 0px 10px 10px 0px;
+  width: 150px;
+  height: 13px;
+  background-color: #2f3136;
+}
+
+#lua {
+  margin-top: 5px;
+  position: static; 
+  background-color: #000080;
+  color: white;
+  padding: 0px 15px;
+  font-size: 10.8px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.box3 {
+  margin-top: 5px;
+  padding: 0;
+  height: 13px;
+  border: 1px solid #2f3136;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.line3 {
+  border-radius: 0px 10px 10px 0px;
+  width: 80px;
+  height: 13px;
+  background-color: #2f3136;
+}
+
+#Info {   
+  background-color: #2f3136;
+  color: white;
+  font-family: Tahoma;
+  padding: 0px 10px;
+  border-radius: 2.5px;
+}
+
+#page2 {
+  margin-top: 20px;
+}
+
+#move {
+  margin-bottom: -20px;
+}
+
+div button {
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container button {
+  margin-right: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.button-container button:last-child {
+  margin-right: 0;
+}
+
+.button-container button:hover {
+  background-color: #2f3136;
+  color: white;
+}
+
+.button-container button:disabled {
+  background-color: #ccc; 
+  color: #999; 
+  pointer-events: none; 
+}
+
+#footer {
+  font-size: small;
+  position: relative;
+  margin-bottom: auto;
+  bottom: -1em;
+  font-weight: lighter;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden0 {
+  display: block;
+}
+
+.hidden1 {
+  display: none;
+}
+
+.hidden2 {
+  display: none;
+}
+
+.hidden3 {
+  display: none;
+}
+
+#show-more-button {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .button-container button {
+    margin-right: 10px;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0em;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
