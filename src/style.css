@@ -1,38 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
 body {
-    position: relative;
-    width: 100%;
-    word-wrap: break-word;
-    font-family: Open Sans;
-    background-color: rgb(211, 211, 211);
-    margin: 0;
-    padding: 20px;
+    transition: background-color 0.3s ease;
+    margin: 0 25%;
+    padding: 0 5px;
+    background-color: #d3d3d3;
     box-sizing: border-box;
     min-height: 100vh;
-  }
-  
-  #title {
-    margin-top: 0;
-  }
-  
-  h1, h2 {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 6%;
+}
+
+h2 {
     font-weight: 500;
-  }
-  
-  button {
-    border: none;
-    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.skills {
+    display: none;
+}
+
+.experience {
+  display: none;
+}
+
+.appscontainer ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.appscontainer ul li {
+    background-color: #2f3136;
+    padding: 4px;
+    color: white;
     border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  #solid {   
+    height: 15px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+}
+
+.schoolinfo {
     background-color: #2f3136;
     color: white;
-    padding: 0px 10px;
-    border-radius: 2.5px;
-  }
-  
-  #html {
+    padding: 0 5px;
+    border-radius: 3px;
+    width: 90px;
+    text-align: center;
+}
+
+.buttonsinfo {
+    width: 100%;
+    text-align: center;
+}
+
+.animate {
+  background-color: transparent;
+  color: black;
+}
+
+.buttonsinfo button {
+    border: none;
+    padding: 5px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-weight: 530;
+}
+
+.buttonsinfo button:disabled {
+    color: white;
+    background-color: #2f3136;
+}
+
+.school {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.html {
     margin-top: 0;
     position: static; 
     background-color: #f06529;
@@ -40,24 +94,24 @@ body {
     padding: 0px 5px;
     font-size: 10.8px;
     border-radius: 0px 0px 5px 5px;
-  }
-  
-  .box {
+}
+
+.box {
     margin-top: 5px;
     padding: 0;
     height: 13px;
     border: 0.1px solid #2f3136;
     border-radius: 0px 10px 10px 0px;
-  }
-  
-  .line {
+}
+
+.line {
     border-radius: 0px 10px 10px 0px;
-    width: 100px;
+    width: 350px;
     height: 13px;
     background-color: #2f3136;
-  }
-  
-  #css {
+}
+
+#css {
     margin-top: 5px;
     position: static; 
     background-color: #2965f1;
@@ -77,7 +131,7 @@ body {
   
   .line1 {
     border-radius: 0px 10px 10px 0px;
-    width: 200px;
+    width: 300px;
     height: 13px;
     background-color: #2f3136;
   }
@@ -131,231 +185,130 @@ body {
     height: 13px;
     background-color: #2f3136;
   }
-  
-  #Info {   
-    background-color: #2f3136;
-    color: white;
-    font-family: Tahoma;
-    padding: 0px 10px;
-    border-radius: 2.5px;
-  }
-  
-  #page2 {
-    margin-top: 20px;
-  }
-  
-  #move {
-    margin-bottom: -20px;
-  }
-  
-  div button {
-    margin-top: 20px;
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .button-container button {
-    margin-right: 10px;
-    padding: 5px;
-    text-align: center;
-  }
-  
-  .button-container button:last-child {
-    margin-right: 0;
-  }
-  
-  .button-container button:hover {
-    background-color: #2f3136;
-    color: white;
-  }
-  
-  .button-container button:disabled {
-    background-color: #ccc; 
-    color: #999; 
-    pointer-events: none; 
-  }
-  
-  #footer {
-    font-size: small;
-    position: relative;
-    margin-bottom: auto;
-    bottom: -1em;
-    font-weight: lighter;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .hidden0 {
-    display: block;
-  }
-  
-  .hidden1 {
-    display: none;
-  }
-  
-  .hidden2 {
-    display: none;
-  }
-  
-  .hidden3 {
-    display: none;
-  }
-  
-  #show-more-button {
-    border: none;
-    background: transparent;
-    padding: 0;
-  }
 
-  .branch {
-    width: 100%;
-    height: 105px;
-    background-color: #c2c2c2;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-  }
+/* Swtich */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
 
-  .branch img {
-    width: 120px;
-    height: 85px;
-    position: absolute;
-    left: 10%;
-    border-radius: 8px;
-  }
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-  .brc {
-    position: absolute;
-    left: 32%;
-    transform: translate(1%, -33px);
-  }
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2f3136;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 20px;
+}
 
-  .branchp {
-    position: absolute;
-    transform: translate(20%, 10px);
-    width: 60%;
-    margin: 0;
-  }
-  
-  @media screen and (min-width: 600px) {
-    body {
-      max-width: 600px;
-      margin: auto;
-      padding: 40px;
-    }
-  }
-  
-  @media screen and (max-width: 400px) {
-    .button-container button {
-      margin-right: 10px;
-    }
-  }
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
 
-  @media screen and (max-width: 601px) {
-    .branch img {
-      left: 7%;
-    }
-  
-    .brc {
-      left: 32%;
-      transform: translate(-10%, -33px);
-    }
-  
-    .branchp {
-      transform: translate(17%, 10px);
-    }
-  }
+input:checked + .slider {
+  background-color: #cacaca;
+}
 
-  @media screen and (max-width: 520px) {
-    .branch img {
-      left: 7%;
-    }
-  
-    .brc {
-      left: 35%;
-      transform: translate(-10%, -33px);
-    }
-  
-    .branchp {
-      transform: translate(22%, 10px);
-    }
-  }
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+  background-color: #2f3136;
+}
 
-  @media screen and (max-width: 465px) {
-    .branch {
-      height: 110px;
-    }
-    .branch img {
-      left: 7%;
-    }
-  
-    .brc {
-      left: 37%;
-      transform: translate(-10%, -33px);
-    }
-  
-    .branchp {
-      transform: translate(25%, 10px);
-    }
-  }
 
-  @media screen and (max-width: 435px) {
-    .branch {
-      height: 110px;
-    }
-    .branch img {
-      left: 7%;
-    }
-  
-    .brc {
-      left: 39%;
-      transform: translate(-10%, -33px);
-    }
-  
-    .branchp {
-      transform: translate(26%, 15px);
-      width: 55%;
-    }
-  }
+/* Animation*/
 
-  @media screen and (max-width: 403px) {
-    .branch {
-      height: 180px;
-    }
-    .branch img {
-      left: 7%;
-      transform: translate(3%, -38px);
-      width: 80%;
-    }
-  
-    .brc {
-      left: 10%;
-      transform: translate(0, 20px);
-    }
-  
-    .branchp {
-      transform: translate(-1%, 60px);
-      width: 80%;
-    }
+@keyframes cursor {
+  0% {
+      opacity: 1;
   }
-  
-  body::-webkit-scrollbar {
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+#animate::after {
+  content: '|';
+  animation: cursor 1s infinite;
+}
+
+/* Scroll Bar */
+
+body::-webkit-scrollbar {
     width: 0em;
     background-color: transparent;
-  }
+}
   
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: transparent;
-  }
+}
   
-  body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background-color: transparent;
+}
+
+/* Dark Mode*/
+
+body.dark-mode {
+  background-color: #272727;
+  color: #cacaca;
+}
+
+body.dark-mode .animate {
+  color: #cacaca;
+}
+
+body.dark-mode .appscontainer ul li {
+  background-color: #cacaca;
+  color: black;
+}
+
+body.dark-mode .showmore {
+  color: #cacaca;
+}
+
+body.dark-mode .line, body.dark-mode .line1, body.dark-mode .line2, body.dark-mode .line3 {
+  background-color: #cacaca;
+}
+
+body.dark-mode .box, body.dark-mode .box1, body.dark-mode .box2, body.dark-mode .box3 {
+  border: 0.1px solid #cacaca;
+}
+
+body.dark-mode .schoolinfo {
+  background-color: #cacaca;
+  color: black;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0 2%;
   }
+}
